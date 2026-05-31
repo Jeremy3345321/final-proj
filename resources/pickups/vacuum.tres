@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PickupMagnet" format=3 uid="uid://cyqogs72kku56"]
+
+[ext_resource type="Texture2D" uid="uid://b5l0dwpg1cxjs" path="res://assets/others/Sprite-Vacuum-converted-from-webp.svg" id="1_4rryi"]
+[ext_resource type="Script" uid="uid://btrnnme3xbnqp" path="res://resources/pickups/vacuum.gd" id="2_wxu1c"]
+[ext_resource type="AudioStream" uid="uid://bedww84gx5834" path="res://assets/sounds/level-up-sfx-sound.mp3" id="3_wxu1c"]
+
+[resource]
+script = ExtResource("2_wxu1c")
+title = "Vacuum"
+icon = ExtResource("1_4rryi")
+custom_scale = Vector2(0.25, 0.25)
+sound = ExtResource("3_wxu1c")
+metadata/_custom_type_script = "uid://btrnnme3xbnqp"

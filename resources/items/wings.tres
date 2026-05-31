@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="PassiveItem" format=3 uid="uid://u1k1ysl8ujmy"]
+
+[ext_resource type="Script" uid="uid://lr3buodh7ysp" path="res://scenes/player/items/passive_item_res.gd" id="1_ji1qe"]
+[ext_resource type="Texture2D" uid="uid://bygbvdhsduq7a" path="res://assets/weapon sprites/Icon-Wings.svg" id="2_htjhs"]
+[ext_resource type="Script" uid="uid://qyq7k1xmj35t" path="res://scenes/player/stats/stats_res.gd" id="3_g3m2u"]
+
+[sub_resource type="Resource" id="Resource_7n8v3"]
+script = ExtResource("3_g3m2u")
+description = "+15 Movement Speed"
+movement_speed = 15.0
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[sub_resource type="Resource" id="Resource_rvwep"]
+script = ExtResource("3_g3m2u")
+description = "+25 Movement Speed"
+movement_speed = 25.0
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[sub_resource type="Resource" id="Resource_yo66i"]
+script = ExtResource("3_g3m2u")
+description = "+35 Movement Speed"
+movement_speed = 35.0
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[resource]
+script = ExtResource("1_ji1qe")
+upgrades = Array[ExtResource("3_g3m2u")]([SubResource("Resource_7n8v3"), SubResource("Resource_rvwep"), SubResource("Resource_yo66i")])
+title = "Wings"
+texture = ExtResource("2_htjhs")
+metadata/_custom_type_script = "uid://lr3buodh7ysp"

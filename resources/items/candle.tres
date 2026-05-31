@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="PassiveItem" format=3 uid="uid://u3hgwc1jam10"]
+
+[ext_resource type="Script" uid="uid://lr3buodh7ysp" path="res://scenes/player/items/passive_item_res.gd" id="1_vv7p5"]
+[ext_resource type="Texture2D" uid="uid://bmdgx4aehdpma" path="res://assets/weapon sprites/Icon-Candelabrador.svg" id="2_rpvv5"]
+[ext_resource type="Script" uid="uid://qyq7k1xmj35t" path="res://scenes/player/stats/stats_res.gd" id="3_8vqws"]
+
+[sub_resource type="Resource" id="Resource_usr0r"]
+script = ExtResource("3_8vqws")
+description = "+25 Attack Range"
+area = 25.0
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[sub_resource type="Resource" id="Resource_vnjoa"]
+script = ExtResource("3_8vqws")
+description = "+35 Attack Range"
+area = 35.0
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[sub_resource type="Resource" id="Resource_46t0i"]
+script = ExtResource("3_8vqws")
+description = "+50 Attack Range"
+area = 50.0
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[resource]
+script = ExtResource("1_vv7p5")
+upgrades = Array[ExtResource("3_8vqws")]([SubResource("Resource_usr0r"), SubResource("Resource_vnjoa"), SubResource("Resource_46t0i")])
+title = "Candle"
+texture = ExtResource("2_rpvv5")
+metadata/_custom_type_script = "uid://lr3buodh7ysp"

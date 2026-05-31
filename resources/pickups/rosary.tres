@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Death" format=3 uid="uid://dutqmo8ym6kfv"]
+
+[ext_resource type="Texture2D" uid="uid://bjdbikhadsu7j" path="res://assets/others/Sprite-Rosary.svg" id="1_80h3h"]
+[ext_resource type="Script" uid="uid://d24yl6ye00ymp" path="res://resources/pickups/death.gd" id="2_xnane"]
+
+[resource]
+script = ExtResource("2_xnane")
+title = "Rosary"
+icon = ExtResource("1_80h3h")
+custom_scale = Vector2(0.25, 0.25)
+metadata/_custom_type_script = "uid://d24yl6ye00ymp"

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bdwnwpcaecvdo"]
+
+[ext_resource type="Script" uid="uid://ceensbf4i2sk3" path="res://scenes/player/weapons/weapon_slot.gd" id="1_q03f4"]
+
+[node name="WeaponSlot" type="PanelContainer" unique_id=1034912518]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_q03f4")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1946143694]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Cooldown" type="Timer" parent="." unique_id=445017441]
+autostart = true
+
+[connection signal="timeout" from="Cooldown" to="." method="_on_cooldown_timeout"]

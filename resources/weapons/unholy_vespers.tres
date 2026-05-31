@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Circular" format=3 uid="uid://b8e5x06l6nefg"]
+
+[ext_resource type="Texture2D" uid="uid://bh0l8r1uxmp5k" path="res://assets/weapon sprites/Icon-Unholy_Vespers_projectile.png" id="1_b7x73"]
+[ext_resource type="Material" uid="uid://4o2wkuj86c05" path="res://resources/particle effects/dark_vesper_particles.tres" id="2_0776d"]
+[ext_resource type="PackedScene" uid="uid://cgrna8dt4tfg1" path="res://scenes/player/weapons/projectile.tscn" id="2_vqfg2"]
+[ext_resource type="Script" uid="uid://d0a0km8ividtk" path="res://scenes/player/weapons/circular/circular_weapon_res.gd" id="3_0776d"]
+[ext_resource type="Texture2D" uid="uid://dlwl2ija0tlgl" path="res://assets/weapon sprites/Icon-Unholy_Vespers.png" id="4_lr1kj"]
+[ext_resource type="Script" uid="uid://domay1tllbu0m" path="res://scenes/player/weapons/upgrade/upgrade_res.gd" id="5_0x6oh"]
+
+[resource]
+script = ExtResource("3_0776d")
+angular_speed = 240
+radius = 140
+amount = 7
+custom_scale = Vector2(0.3, 0.3)
+particle_effect = ExtResource("2_0776d")
+damage = 7
+cooldown = 2.0
+battle_texture = ExtResource("1_b7x73")
+z_index = 1
+title = "Unholy Vespers"
+texture = ExtResource("4_lr1kj")
+metadata/_custom_type_script = "uid://d0a0km8ividtk"

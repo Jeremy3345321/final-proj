@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Chest" format=3 uid="uid://b6nqyf1fk7e02"]
+
+[ext_resource type="Texture2D" uid="uid://f8jdx7gxyph6" path="res://assets/chest/chest_00.png" id="1_nii4d"]
+[ext_resource type="Script" uid="uid://e311yju2l5gi" path="res://scenes/player/chest_res.gd" id="2_vknlu"]
+
+[resource]
+script = ExtResource("2_vknlu")
+title = "Chest Drop"
+icon = ExtResource("1_nii4d")
+description = "Elite chest drop"
+metadata/_custom_type_script = "uid://e311yju2l5gi"

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Stage" format=3 uid="uid://dxro04j1crugg"]
+
+[ext_resource type="Script" uid="uid://c2tljy6mxrur1" path="res://scenes/enemies/enemy_type.gd" id="1_cnlb5"]
+[ext_resource type="Resource" uid="uid://8yoqfesadh67" path="res://resources/enemies/corrupted_cube.tres" id="2_n0apw"]
+[ext_resource type="Resource" uid="uid://gs3sgvmu4yeg" path="res://resources/enemies/belly_monster.tres" id="3_k8x4h"]
+[ext_resource type="Resource" uid="uid://dnchqaut5jjnh" path="res://resources/enemies/gremlin.tres" id="4_1kl1l"]
+[ext_resource type="Resource" uid="uid://co3bmf7pwo3gl" path="res://resources/enemies/sea_monster.tres" id="5_qewwo"]
+[ext_resource type="Resource" uid="uid://ulpd58ky6fqt" path="res://resources/enemies/ghastly.tres" id="6_7fdv1"]
+[ext_resource type="Script" uid="uid://mbyvch1sio4y" path="res://scenes/world/stage/stage_res.gd" id="7_fq6pt"]
+[ext_resource type="Script" uid="uid://lr3buodh7ysp" path="res://scenes/player/items/passive_item_res.gd" id="8_jwxj7"]
+[ext_resource type="Resource" uid="uid://u1k1ysl8ujmy" path="res://resources/items/wings.tres" id="9_naeao"]
+[ext_resource type="Script" uid="uid://cp0rj7jinxhvn" path="res://scenes/player/weapons/weapon_res.gd" id="10_nug71"]
+[ext_resource type="Resource" uid="uid://cbyfxwrl3h0aw" path="res://resources/weapons/lightning_ring.tres" id="11_amkfb"]
+
+[resource]
+script = ExtResource("7_fq6pt")
+stage_number = 2
+stage_name = "Stage 2"
+enemy_pool = Array[ExtResource("1_cnlb5")]([ExtResource("2_n0apw"), ExtResource("3_k8x4h"), ExtResource("4_1kl1l"), ExtResource("5_qewwo"), ExtResource("6_7fdv1")])
+unlocked_weapons = Array[ExtResource("10_nug71")]([ExtResource("11_amkfb")])
+unlocked_passives = Array[ExtResource("8_jwxj7")]([ExtResource("9_naeao")])
+metadata/_custom_type_script = "uid://mbyvch1sio4y"

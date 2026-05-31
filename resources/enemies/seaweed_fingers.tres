@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://xwb60lqdmodr"]
+
+[ext_resource type="Script" uid="uid://shqy6lbdhgrn" path="res://scenes/player/pickups/pickup_res.gd" id="1_yg0yh"]
+[ext_resource type="Resource" uid="uid://dams78wgjmuis" path="res://resources/pickups/blue_gem.tres" id="2_h4vos"]
+[ext_resource type="Script" uid="uid://c2tljy6mxrur1" path="res://scenes/enemies/enemy_type.gd" id="3_u3sgl"]
+[ext_resource type="Texture2D" uid="uid://d0csl3t0fs4uf" path="res://assets/32x32 single battlers/07 v1.png" id="4_kn733"]
+
+[resource]
+script = ExtResource("3_u3sgl")
+title = "Seaweed Fingers"
+texture = ExtResource("4_kn733")
+health = 4
+damage = 5
+drops = Array[ExtResource("1_yg0yh")]([ExtResource("2_h4vos")])
+metadata/_custom_type_script = "uid://c2tljy6mxrur1"

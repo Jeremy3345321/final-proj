@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Stage" format=3 uid="uid://dxubxbspc0kma"]
+
+[ext_resource type="Script" uid="uid://c2tljy6mxrur1" path="res://scenes/enemies/enemy_type.gd" id="1_oxpis"]
+[ext_resource type="Resource" uid="uid://drwn3nb08bwo" path="res://resources/enemies/beholder.tres" id="2_umxep"]
+[ext_resource type="Resource" uid="uid://bb4aopj4euyg7" path="res://resources/enemies/evil_eye.tres" id="3_uimkm"]
+[ext_resource type="Resource" uid="uid://1rbjcmg4eruc" path="res://resources/enemies/eye_squid.tres" id="4_0uoml"]
+[ext_resource type="Resource" uid="uid://crmntwerbwjx" path="res://resources/enemies/homunculus.tres" id="5_y8yfh"]
+[ext_resource type="Resource" uid="uid://bw5v4fweqndxu" path="res://resources/enemies/stub_legs.tres" id="6_fxwcm"]
+[ext_resource type="Script" uid="uid://mbyvch1sio4y" path="res://scenes/world/stage/stage_res.gd" id="7_dq4w8"]
+[ext_resource type="Script" uid="uid://lr3buodh7ysp" path="res://scenes/player/items/passive_item_res.gd" id="8_isvip"]
+[ext_resource type="Resource" uid="uid://u3hgwc1jam10" path="res://resources/items/candle.tres" id="9_hrxwl"]
+[ext_resource type="Script" uid="uid://cp0rj7jinxhvn" path="res://scenes/player/weapons/weapon_res.gd" id="10_0oain"]
+[ext_resource type="Resource" uid="uid://bvaoc4qdl7vep" path="res://resources/weapons/santa_water.tres" id="11_i1ynp"]
+
+[resource]
+script = ExtResource("7_dq4w8")
+enemy_pool = Array[ExtResource("1_oxpis")]([ExtResource("2_umxep"), ExtResource("3_uimkm"), ExtResource("4_0uoml"), ExtResource("5_y8yfh"), ExtResource("6_fxwcm")])
+unlocked_weapons = Array[ExtResource("10_0oain")]([ExtResource("11_i1ynp")])
+unlocked_passives = Array[ExtResource("8_isvip")]([ExtResource("9_hrxwl")])
+survival_seconds = 30
+metadata/_custom_type_script = "uid://mbyvch1sio4y"

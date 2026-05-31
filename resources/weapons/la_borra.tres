@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="MultiDamagingArea" format=3 uid="uid://7kuo8eb7hau8"]
+
+[ext_resource type="Texture2D" uid="uid://cje1d82yrffah" path="res://assets/Pipoya VFX TimeMagic/192x192/pipo-btleffect212_192.png" id="1_p781t"]
+[ext_resource type="PackedScene" uid="uid://cgrna8dt4tfg1" path="res://scenes/player/weapons/projectile.tscn" id="2_haaye"]
+[ext_resource type="Script" uid="uid://mgvh0bj0rdk1" path="res://scenes/player/weapons/multi_damage_area_res/multi_damage_area_res.gd" id="3_ruamr"]
+[ext_resource type="Texture2D" uid="uid://5wrl1kwgkv8" path="res://assets/weapon sprites/Icon-La_Borra.png" id="4_b2rbu"]
+[ext_resource type="Script" uid="uid://domay1tllbu0m" path="res://scenes/player/weapons/upgrade/upgrade_res.gd" id="5_if2m1"]
+
+[resource]
+script = ExtResource("3_ruamr")
+amount = 7
+area = 4.0
+hframes = 5
+vframes = 4
+frame = 12
+custom_scale = Vector2(0.2, 0.2)
+damage = 9
+cooldown = 4.0
+battle_texture = ExtResource("1_p781t")
+title = "La Borra"
+texture = ExtResource("4_b2rbu")
+metadata/_custom_type_script = "uid://mgvh0bj0rdk1"

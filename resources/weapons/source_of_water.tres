@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SingleShot" format=3 uid="uid://bjajxf1pwrss3"]
+
+[ext_resource type="Material" uid="uid://ba215g2t7uapc" path="res://resources/particle effects/source_of_water_particle.tres" id="1_dfyha"]
+[ext_resource type="PackedScene" uid="uid://cgrna8dt4tfg1" path="res://scenes/player/weapons/projectile.tscn" id="1_so2dp"]
+[ext_resource type="Script" uid="uid://biro2r6vq1t5q" path="res://scenes/player/weapons/single shot/single_shot_res.gd" id="2_so2dp"]
+[ext_resource type="Texture2D" uid="uid://v4kyjwk86dsq" path="res://assets/weapon sprites/Icon-Holy_Wand.svg" id="3_17jhf"]
+[ext_resource type="AudioStream" uid="uid://bervrwe8u4ld8" path="res://assets/sounds/422516__nightflame__menu-fx-03-ascending.wav" id="4_17jhf"]
+[ext_resource type="Script" uid="uid://domay1tllbu0m" path="res://scenes/player/weapons/upgrade/upgrade_res.gd" id="4_72w2g"]
+
+[resource]
+script = ExtResource("2_so2dp")
+particle_effect = ExtResource("1_dfyha")
+damage = 5
+speed = 500
+cooldown = 0.3
+sound = ExtResource("4_17jhf")
+title = "Source of Water"
+texture = ExtResource("3_17jhf")
+metadata/_custom_type_script = "uid://cp0rj7jinxhvn"

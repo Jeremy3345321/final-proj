@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://clht3la04d6f7"]
+
+[ext_resource type="Script" uid="uid://bhl7nck68frhu" path="res://scenes/world/spawner.gd" id="1_nekus"]
+[ext_resource type="PackedScene" uid="uid://gssccncsp0oj" path="res://scenes/enemies/enemy.tscn" id="2_lydsj"]
+[ext_resource type="PackedScene" uid="uid://bltxi2r7vl0aw" path="res://scenes/others/destructible.tscn" id="3_hs70d"]
+[ext_resource type="Script" uid="uid://mbyvch1sio4y" path="res://scenes/world/stage/stage_res.gd" id="4_nxmw7"]
+[ext_resource type="Resource" uid="uid://dxubxbspc0kma" path="res://resources/stages/stage_1.tres" id="5_hs70d"]
+[ext_resource type="Resource" uid="uid://dxro04j1crugg" path="res://resources/stages/stage_2.tres" id="6_1tjwj"]
+[ext_resource type="Resource" uid="uid://cw1x6h38ddv47" path="res://resources/stages/stage_3.tres" id="7_uh1fv"]
+
+[node name="Spawner" type="Node2D" unique_id=780748923]
+script = ExtResource("1_nekus")
+enemy = ExtResource("2_lydsj")
+destructible = ExtResource("3_hs70d")
+stages = Array[ExtResource("4_nxmw7")]([ExtResource("5_hs70d"), ExtResource("6_1tjwj"), ExtResource("7_uh1fv")])
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1423811245]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=1623080884]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -5.5
+offset_top = 29.0
+offset_right = 5.5
+offset_bottom = 52.0
+grow_horizontal = 2
+
+[node name="Minute" type="Label" parent="UI/HBoxContainer" unique_id=1235223861]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "0"
+
+[node name="Label2" type="Label" parent="UI/HBoxContainer" unique_id=485668444]
+layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = ":"
+
+[node name="Second" type="Label" parent="UI/HBoxContainer" unique_id=1178878256]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+
+[node name="Timer" type="Timer" parent="." unique_id=490390168]
+autostart = true
+
+[node name="Pattern" type="Timer" parent="." unique_id=1893171783]
+wait_time = 30.0
+autostart = true
+
+[node name="Elite" type="Timer" parent="." unique_id=1667152925]
+wait_time = 20.0
+autostart = true
+
+[node name="Destructible" type="Timer" parent="." unique_id=287589459]
+wait_time = 30.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Pattern" to="." method="_on_pattern_timeout"]
+[connection signal="timeout" from="Elite" to="." method="_on_elite_timeout"]
+[connection signal="timeout" from="Destructible" to="." method="_on_destructible_timeout"]

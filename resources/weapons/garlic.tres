@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="DamagingArea" format=3 uid="uid://cwjwtfjr37t3l"]
+
+[ext_resource type="Texture2D" uid="uid://dun8n03j7y47c" path="res://assets/Pipoya VFX TimeMagic/192x192/pipo-btleffect209_192.png" id="1_bbrdn"]
+[ext_resource type="Resource" uid="uid://cmevisl3pfy6v" path="res://resources/items/red_heart.tres" id="2_gaiqq"]
+[ext_resource type="Resource" uid="uid://c5vxgbggpgpt3" path="res://resources/weapons/soul_eater.tres" id="2_mwybw"]
+[ext_resource type="PackedScene" uid="uid://cgrna8dt4tfg1" path="res://scenes/player/weapons/projectile.tscn" id="3_mwybw"]
+[ext_resource type="Script" uid="uid://bsosy7yntpgpx" path="res://scenes/player/weapons/damaging area/damaging_area_res.gd" id="4_288xb"]
+[ext_resource type="Texture2D" uid="uid://6g0klulsplax" path="res://assets/weapon sprites/Icon-Garlic.png" id="5_y1pyi"]
+[ext_resource type="Script" uid="uid://domay1tllbu0m" path="res://scenes/player/weapons/upgrade/upgrade_res.gd" id="6_l0afh"]
+[ext_resource type="Script" uid="uid://baj6syn4d5r1f" path="res://scenes/player/weapons/upgrade/damagin_area_upgrade.gd" id="7_gaiqq"]
+
+[sub_resource type="Resource" id="Resource_mwybw"]
+script = ExtResource("7_gaiqq")
+damage = 1
+description = "+1 Damage"
+metadata/_custom_type_script = "uid://baj6syn4d5r1f"
+
+[sub_resource type="Resource" id="Resource_288xb"]
+script = ExtResource("7_gaiqq")
+area = 0.3
+description = "+30% Area Increase"
+metadata/_custom_type_script = "uid://baj6syn4d5r1f"
+
+[sub_resource type="Resource" id="Resource_y1pyi"]
+script = ExtResource("7_gaiqq")
+cooldown = -0.2
+description = "-0.2s Cooldown"
+metadata/_custom_type_script = "uid://baj6syn4d5r1f"
+
+[sub_resource type="Resource" id="Resource_l0afh"]
+script = ExtResource("7_gaiqq")
+damage = 1
+description = "+1 Damage"
+metadata/_custom_type_script = "uid://baj6syn4d5r1f"
+
+[sub_resource type="Resource" id="Resource_h6q0n"]
+script = ExtResource("7_gaiqq")
+cooldown = -0.2
+description = "-0.2s Cooldown"
+metadata/_custom_type_script = "uid://baj6syn4d5r1f"
+
+[resource]
+script = ExtResource("4_288xb")
+area = 1.0
+custom_scale = Vector2(1.3, 1.3)
+damage = 1
+speed = 1
+cooldown = 1.3
+upgrades = Array[ExtResource("6_l0afh")]([SubResource("Resource_mwybw"), SubResource("Resource_288xb"), SubResource("Resource_y1pyi"), SubResource("Resource_l0afh"), SubResource("Resource_h6q0n")])
+item_needed = ExtResource("2_gaiqq")
+evolution = ExtResource("2_mwybw")
+battle_texture = ExtResource("1_bbrdn")
+title = "Garlic"
+texture = ExtResource("5_y1pyi")
+metadata/_custom_type_script = "uid://bsosy7yntpgpx"

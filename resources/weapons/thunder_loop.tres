@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Lightning" format=3 uid="uid://bh2gwi30axu2r"]
+
+[ext_resource type="Texture2D" uid="uid://ij1shtkr3tpb" path="res://assets/lightning/VFX3/Frames/lightning_skill3_frame3.png" id="1_kqy1s"]
+[ext_resource type="PackedScene" uid="uid://cgrna8dt4tfg1" path="res://scenes/player/weapons/projectile.tscn" id="2_7pg4k"]
+[ext_resource type="Script" uid="uid://cvadkgy61llbj" path="res://scenes/player/weapons/lightning/lightning_res.gd" id="3_b1qth"]
+[ext_resource type="AudioStream" uid="uid://cal4c0gaj500p" path="res://assets/sounds/653061__novasoundtechnology__thunder-sub-mega-drill-gun-shot-stomp-kick-drum-nova-sound.wav" id="4_w8tc6"]
+[ext_resource type="Texture2D" uid="uid://dnyxhnpm662ke" path="res://assets/weapon sprites/Icon-Thunder_Loop.png" id="5_g0feu"]
+[ext_resource type="Script" uid="uid://domay1tllbu0m" path="res://scenes/player/weapons/upgrade/upgrade_res.gd" id="6_jtinf"]
+
+[resource]
+script = ExtResource("3_b1qth")
+amount = 8
+custom_scale = Vector2(1.5, 1.5)
+damage = 10
+cooldown = 2.5
+sound = ExtResource("4_w8tc6")
+battle_texture = ExtResource("1_kqy1s")
+title = "Thunder Loop"
+texture = ExtResource("5_g0feu")
+metadata/_custom_type_script = "uid://cvadkgy61llbj"

@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="MultiDamagingArea" format=3 uid="uid://bvaoc4qdl7vep"]
+
+[ext_resource type="Texture2D" uid="uid://cje1d82yrffah" path="res://assets/Pipoya VFX TimeMagic/192x192/pipo-btleffect212_192.png" id="1_l1mp0"]
+[ext_resource type="Resource" uid="uid://7kuo8eb7hau8" path="res://resources/weapons/la_borra.tres" id="2_1s218"]
+[ext_resource type="PackedScene" uid="uid://cgrna8dt4tfg1" path="res://scenes/player/weapons/projectile.tscn" id="2_6khds"]
+[ext_resource type="Resource" uid="uid://u3hgwc1jam10" path="res://resources/items/candle.tres" id="2_shalg"]
+[ext_resource type="Script" uid="uid://mgvh0bj0rdk1" path="res://scenes/player/weapons/multi_damage_area_res/multi_damage_area_res.gd" id="3_shalg"]
+[ext_resource type="Texture2D" uid="uid://brp1pv08wugvf" path="res://assets/weapon sprites/Icon-Santa_Water.png" id="4_1s218"]
+[ext_resource type="Script" uid="uid://domay1tllbu0m" path="res://scenes/player/weapons/upgrade/upgrade_res.gd" id="5_qelsa"]
+[ext_resource type="Script" uid="uid://snlexkyc81tc" path="res://scenes/player/weapons/upgrade/multi_damage_upgrade.gd" id="6_6khds"]
+
+[sub_resource type="Resource" id="Resource_shalg"]
+script = ExtResource("6_6khds")
+description = "+1 Damage Increased"
+metadata/_custom_type_script = "uid://snlexkyc81tc"
+
+[sub_resource type="Resource" id="Resource_1s218"]
+script = ExtResource("6_6khds")
+amount = 1
+description = "+1 Amount"
+metadata/_custom_type_script = "uid://snlexkyc81tc"
+
+[sub_resource type="Resource" id="Resource_qelsa"]
+script = ExtResource("6_6khds")
+area = 0.5
+description = "+50% Area Increase"
+metadata/_custom_type_script = "uid://snlexkyc81tc"
+
+[sub_resource type="Resource" id="Resource_wjeu3"]
+script = ExtResource("6_6khds")
+amount = 2
+description = "+2 Damage Increased"
+metadata/_custom_type_script = "uid://snlexkyc81tc"
+
+[sub_resource type="Resource" id="Resource_1uttw"]
+script = ExtResource("6_6khds")
+description = "+2 Amount"
+metadata/_custom_type_script = "uid://snlexkyc81tc"
+
+[resource]
+script = ExtResource("3_shalg")
+hframes = 5
+vframes = 4
+frame = 5
+custom_scale = Vector2(0.2, 0.2)
+damage = 1
+speed = 4
+cooldown = 1.8
+upgrades = Array[ExtResource("5_qelsa")]([SubResource("Resource_shalg"), SubResource("Resource_1s218"), SubResource("Resource_qelsa"), SubResource("Resource_wjeu3"), SubResource("Resource_1uttw")])
+item_needed = ExtResource("2_shalg")
+evolution = ExtResource("2_1s218")
+battle_texture = ExtResource("1_l1mp0")
+title = "Santa Water"
+texture = ExtResource("4_1s218")
+metadata/_custom_type_script = "uid://mgvh0bj0rdk1"

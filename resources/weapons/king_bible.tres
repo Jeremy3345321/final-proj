@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="Circular" format=3 uid="uid://mgsoh6emuw6y"]
+
+[ext_resource type="Texture2D" uid="uid://cq00ac2cm878e" path="res://assets/weapon sprites/Icon-King_Bible_projectile.png" id="1_g7cgh"]
+[ext_resource type="Resource" uid="uid://b8e5x06l6nefg" path="res://resources/weapons/unholy_vespers.tres" id="2_bf8j1"]
+[ext_resource type="Script" uid="uid://d0a0km8ividtk" path="res://scenes/player/weapons/circular/circular_weapon_res.gd" id="2_g7cgh"]
+[ext_resource type="Texture2D" uid="uid://cjvip4jb61mqc" path="res://assets/weapon sprites/Icon-King_Bible-converted-from-webp.svg" id="3_b71gm"]
+[ext_resource type="Resource" uid="uid://b0wlrnmpxpt4p" path="res://resources/items/spinach.tres" id="3_xw44a"]
+[ext_resource type="Script" uid="uid://domay1tllbu0m" path="res://scenes/player/weapons/upgrade/upgrade_res.gd" id="4_5eho5"]
+[ext_resource type="PackedScene" uid="uid://cgrna8dt4tfg1" path="res://scenes/player/weapons/projectile.tscn" id="4_bf8j1"]
+[ext_resource type="Material" uid="uid://ba215g2t7uapc" path="res://resources/particle effects/source_of_water_particle.tres" id="4_xw44a"]
+[ext_resource type="Script" uid="uid://gptcymnjrfbv" path="res://scenes/player/weapons/upgrade/circular_upgrade_res.gd" id="6_b71gm"]
+
+[sub_resource type="Resource" id="Resource_5eho5"]
+script = ExtResource("6_b71gm")
+amount = 1
+description = "+1 Amount"
+metadata/_custom_type_script = "uid://gptcymnjrfbv"
+
+[sub_resource type="Resource" id="Resource_bf8j1"]
+script = ExtResource("6_b71gm")
+damage = 1
+description = "+1 Damage"
+metadata/_custom_type_script = "uid://gptcymnjrfbv"
+
+[sub_resource type="Resource" id="Resource_xw44a"]
+script = ExtResource("6_b71gm")
+damage = 2
+description = "+2 Damage"
+metadata/_custom_type_script = "uid://gptcymnjrfbv"
+
+[sub_resource type="Resource" id="Resource_7r1nu"]
+script = ExtResource("6_b71gm")
+angular_speed = 90.0
+description = "+90 Speed"
+metadata/_custom_type_script = "uid://gptcymnjrfbv"
+
+[sub_resource type="Resource" id="Resource_vr4aq"]
+script = ExtResource("6_b71gm")
+amount = 1
+description = "+1 Amount"
+metadata/_custom_type_script = "uid://gptcymnjrfbv"
+
+[resource]
+script = ExtResource("2_g7cgh")
+angular_speed = 90
+radius = 75
+custom_scale = Vector2(0.2, 0.2)
+particle_effect = ExtResource("4_xw44a")
+damage = 2
+speed = 2
+cooldown = 1.0
+upgrades = Array[ExtResource("4_5eho5")]([SubResource("Resource_5eho5"), SubResource("Resource_bf8j1"), SubResource("Resource_xw44a"), SubResource("Resource_7r1nu"), SubResource("Resource_vr4aq")])
+item_needed = ExtResource("3_xw44a")
+evolution = ExtResource("2_bf8j1")
+battle_texture = ExtResource("1_g7cgh")
+title = "King Bible"
+texture = ExtResource("3_b71gm")
+metadata/_custom_type_script = "uid://d0a0km8ividtk"

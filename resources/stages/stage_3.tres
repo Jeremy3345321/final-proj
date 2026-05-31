@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Stage" format=3 uid="uid://cw1x6h38ddv47"]
+
+[ext_resource type="Script" uid="uid://c2tljy6mxrur1" path="res://scenes/enemies/enemy_type.gd" id="1_2igh5"]
+[ext_resource type="Resource" uid="uid://4qql8vbybpgj" path="res://resources/enemies/geodude_ripoff.tres" id="2_qrtmp"]
+[ext_resource type="Resource" uid="uid://xwb60lqdmodr" path="res://resources/enemies/seaweed_fingers.tres" id="3_w8yjb"]
+[ext_resource type="Resource" uid="uid://dout7wi2t3xti" path="res://resources/enemies/two_legs.tres" id="4_8qqur"]
+[ext_resource type="Resource" uid="uid://r5l0ba37yerv" path="res://resources/enemies/flying_amphibian.tres" id="5_ifg27"]
+[ext_resource type="Resource" uid="uid://nhs31f0pr54i" path="res://resources/enemies/thrower.tres" id="6_ehv4w"]
+[ext_resource type="Script" uid="uid://mbyvch1sio4y" path="res://scenes/world/stage/stage_res.gd" id="7_13sng"]
+[ext_resource type="Script" uid="uid://lr3buodh7ysp" path="res://scenes/player/items/passive_item_res.gd" id="8_7guc5"]
+[ext_resource type="Script" uid="uid://cp0rj7jinxhvn" path="res://scenes/player/weapons/weapon_res.gd" id="9_32q4j"]
+
+[resource]
+script = ExtResource("7_13sng")
+stage_number = 3
+stage_name = "Stage 3"
+enemy_pool = Array[ExtResource("1_2igh5")]([ExtResource("2_qrtmp"), ExtResource("3_w8yjb"), ExtResource("4_8qqur"), ExtResource("5_ifg27"), ExtResource("6_ehv4w")])
+metadata/_custom_type_script = "uid://mbyvch1sio4y"

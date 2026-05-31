@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="PassiveItem" format=3 uid="uid://cbjijbn0mj6bu"]
+
+[ext_resource type="Script" uid="uid://lr3buodh7ysp" path="res://scenes/player/items/passive_item_res.gd" id="1_2g7tb"]
+[ext_resource type="Texture2D" uid="uid://c2j3h2it4t40a" path="res://assets/weapon sprites/Icon-Hollow_Heart.svg" id="2_kanmw"]
+[ext_resource type="Script" uid="uid://qyq7k1xmj35t" path="res://scenes/player/stats/stats_res.gd" id="3_3gxte"]
+
+[sub_resource type="Resource" id="Resource_xsw34"]
+script = ExtResource("3_3gxte")
+description = "+25 Max Health"
+max_health = 25.0
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[sub_resource type="Resource" id="Resource_vx16a"]
+script = ExtResource("3_3gxte")
+description = "+30 Max Health"
+max_health = 30.0
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[sub_resource type="Resource" id="Resource_jepx0"]
+script = ExtResource("3_3gxte")
+description = "+35 Max Health"
+max_health = 35.0
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[resource]
+script = ExtResource("1_2g7tb")
+upgrades = Array[ExtResource("3_3gxte")]([SubResource("Resource_xsw34"), SubResource("Resource_vx16a"), SubResource("Resource_jepx0")])
+texture = ExtResource("2_kanmw")
+metadata/_custom_type_script = "uid://lr3buodh7ysp"

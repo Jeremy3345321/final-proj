@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ddjseegbe12jv"]
+
+[ext_resource type="Shader" uid="uid://bomnd3eyk7p5u" path="res://resources/shaders/rainbow.tres" id="1_rpohb"]
+
+[resource]
+shader = ExtResource("1_rpohb")
+shader_parameter/line_thickness = 1.0
+shader_parameter/sin_frequency = 1.00000004424012
+shader_parameter/sin_offset = 0.0
+shader_parameter/light_offset = 0.5

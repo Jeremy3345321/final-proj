@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://drwn3nb08bwo"]
+
+[ext_resource type="Script" uid="uid://shqy6lbdhgrn" path="res://scenes/player/pickups/pickup_res.gd" id="1_mtf42"]
+[ext_resource type="Script" uid="uid://c2tljy6mxrur1" path="res://scenes/enemies/enemy_type.gd" id="1_nnajr"]
+[ext_resource type="Texture2D" uid="uid://b3q8fik1xkquv" path="res://assets/32x32 single battlers/1 v1.png" id="2_8uhao"]
+[ext_resource type="Resource" uid="uid://dams78wgjmuis" path="res://resources/pickups/blue_gem.tres" id="2_an40c"]
+
+[resource]
+script = ExtResource("1_nnajr")
+title = "Beholder"
+texture = ExtResource("2_8uhao")
+health = 3
+damage = 1
+drops = Array[ExtResource("1_mtf42")]([ExtResource("2_an40c")])
+metadata/_custom_type_script = "uid://c2tljy6mxrur1"

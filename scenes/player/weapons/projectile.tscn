@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cgrna8dt4tfg1"]
+
+[ext_resource type="Script" uid="uid://dqv4mgibkntlg" path="res://scenes/player/weapons/projectile.gd" id="1_3r6f2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_14xk6"]
+resource_local_to_scene = true
+
+[node name="Projectile" type="Area2D" unique_id=225681266]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_3r6f2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1211634973]
+position = Vector2(0.5, 0)
+shape = SubResource("CircleShape2D_14xk6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=211598224]
+unique_name_in_owner = true
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1809518882]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=851128791]
+unique_name_in_owner = true
+amount = 180
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_screen_exited"]

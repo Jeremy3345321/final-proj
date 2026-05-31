@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DamagingArea" format=3 uid="uid://c5vxgbggpgpt3"]
+
+[ext_resource type="Texture2D" uid="uid://cje1d82yrffah" path="res://assets/Pipoya VFX TimeMagic/192x192/pipo-btleffect212_192.png" id="1_pn5jq"]
+[ext_resource type="PackedScene" uid="uid://cgrna8dt4tfg1" path="res://scenes/player/weapons/projectile.tscn" id="2_tfmpo"]
+[ext_resource type="Script" uid="uid://bsosy7yntpgpx" path="res://scenes/player/weapons/damaging area/damaging_area_res.gd" id="3_wbn04"]
+[ext_resource type="Texture2D" uid="uid://bitqt5yo2l8hp" path="res://assets/weapon sprites/Icon-Soul_Eater.png" id="4_uspht"]
+[ext_resource type="Script" uid="uid://domay1tllbu0m" path="res://scenes/player/weapons/upgrade/upgrade_res.gd" id="5_mc6mv"]
+
+[resource]
+script = ExtResource("3_wbn04")
+area = 1.5
+vframes = 4
+custom_scale = Vector2(1.9, 1.9)
+damage = 10
+cooldown = 2.0
+battle_texture = ExtResource("1_pn5jq")
+title = "Soul Eater"
+texture = ExtResource("4_uspht")
+metadata/_custom_type_script = "uid://bsosy7yntpgpx"

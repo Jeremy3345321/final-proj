@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Gold" format=3 uid="uid://cv431602qdfws"]
+
+[ext_resource type="Texture2D" uid="uid://wpv277f4vhle" path="res://assets/BigWander_TravellersPouch/IndividualSprites/Pouch_025_TravellersPouch_BigWander(16x16).png" id="1_qrnxn"]
+[ext_resource type="Script" uid="uid://b3ulfj2aby0t0" path="res://scenes/player/items/gold.gd" id="2_ibscc"]
+
+[resource]
+script = ExtResource("2_ibscc")
+gold = 10
+title = "Gold"
+icon = ExtResource("1_qrnxn")
+custom_scale = Vector2(1.5, 1.5)
+metadata/_custom_type_script = "uid://b3ulfj2aby0t0"

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bltxi2r7vl0aw"]
+
+[ext_resource type="Texture2D" uid="uid://q2thrgs6s6df" path="res://assets/destructible/Torch Animated.png" id="1_be687"]
+[ext_resource type="Script" uid="uid://dw1pteiv8w5yc" path="res://scenes/others/destructible.gd" id="2_08xq4"]
+[ext_resource type="Script" uid="uid://shqy6lbdhgrn" path="res://scenes/player/pickups/pickup_res.gd" id="3_tmemk"]
+[ext_resource type="Resource" uid="uid://ceyaelfel4dpu" path="res://resources/pickups/apple_pie.tres" id="4_jqr8a"]
+[ext_resource type="Resource" uid="uid://dutqmo8ym6kfv" path="res://resources/pickups/rosary.tres" id="5_jqr8a"]
+[ext_resource type="Resource" uid="uid://cyqogs72kku56" path="res://resources/pickups/vacuum.tres" id="6_b6qvp"]
+[ext_resource type="Resource" uid="uid://cv431602qdfws" path="res://resources/pickups/gold.tres" id="7_22a0s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tmemk"]
+height = 42.0
+
+[node name="Destructible" type="Sprite2D" unique_id=482908198]
+texture = ExtResource("1_be687")
+hframes = 4
+vframes = 2
+script = ExtResource("2_08xq4")
+drops = Array[ExtResource("3_tmemk")]([ExtResource("5_jqr8a"), ExtResource("4_jqr8a"), ExtResource("6_b6qvp"), ExtResource("7_22a0s")])
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1694107728]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=63806806]
+shape = SubResource("CapsuleShape2D_tmemk")

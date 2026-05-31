@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Health" format=3 uid="uid://ceyaelfel4dpu"]
+
+[ext_resource type="Texture2D" uid="uid://d02jqo3grjtuw" path="res://assets/food/06_apple_pie_dish.png" id="1_ye80p"]
+[ext_resource type="Script" uid="uid://bu1fo2lumxhos" path="res://resources/pickups/health_pickup.gd" id="2_k4b33"]
+[ext_resource type="AudioStream" uid="uid://bw14qhafi7sfg" path="res://assets/sounds/833035__zeltbolt__apply_heal.wav" id="3_k4b33"]
+
+[resource]
+script = ExtResource("2_k4b33")
+amount = 30
+title = "Apple Pie"
+icon = ExtResource("1_ye80p")
+custom_scale = Vector2(0.9, 0.9)
+description = "+30 Health"
+sound = ExtResource("3_k4b33")
+metadata/_custom_type_script = "uid://bu1fo2lumxhos"

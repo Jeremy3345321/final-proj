@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="SingleShot" format=3 uid="uid://d0hxojuq8rr1v"]
+
+[ext_resource type="Resource" uid="uid://cwvblpmwe1ix3" path="res://resources/items/magnet.tres" id="1_8a28o"]
+[ext_resource type="Texture2D" uid="uid://boyqum3w8wq3k" path="res://assets/weapon sprites/Icon-Magic_Wand.svg" id="1_q41q4"]
+[ext_resource type="Resource" uid="uid://bjajxf1pwrss3" path="res://resources/weapons/source_of_water.tres" id="1_qf6d8"]
+[ext_resource type="Material" uid="uid://cq8tkxmmt4fe8" path="res://resources/particle effects/magic_wand_particle.tres" id="3_k181t"]
+[ext_resource type="Script" uid="uid://biro2r6vq1t5q" path="res://scenes/player/weapons/single shot/single_shot_res.gd" id="3_sovce"]
+[ext_resource type="PackedScene" uid="uid://cgrna8dt4tfg1" path="res://scenes/player/weapons/projectile.tscn" id="4_m1ndj"]
+[ext_resource type="Script" uid="uid://domay1tllbu0m" path="res://scenes/player/weapons/upgrade/upgrade_res.gd" id="4_sovce"]
+[ext_resource type="Script" uid="uid://dawowtntn6x5v" path="res://scenes/player/weapons/upgrade/projectile_upgrade.gd" id="5_8a28o"]
+[ext_resource type="AudioStream" uid="uid://bervrwe8u4ld8" path="res://assets/sounds/422516__nightflame__menu-fx-03-ascending.wav" id="6_m1ndj"]
+
+[sub_resource type="Resource" id="Resource_qf6d8"]
+script = ExtResource("5_8a28o")
+damage = 1
+description = "+1 Projectile Damage"
+metadata/_custom_type_script = "uid://dawowtntn6x5v"
+
+[sub_resource type="Resource" id="Resource_k181t"]
+script = ExtResource("5_8a28o")
+speed = 200.0
+description = "+200.0 Projectile Speed"
+metadata/_custom_type_script = "uid://dawowtntn6x5v"
+
+[sub_resource type="Resource" id="Resource_m1ndj"]
+script = ExtResource("5_8a28o")
+damage = 2
+description = "+2 Projectile Damage"
+metadata/_custom_type_script = "uid://dawowtntn6x5v"
+
+[sub_resource type="Resource" id="Resource_vbhly"]
+script = ExtResource("5_8a28o")
+cooldown = -0.1
+description = "-0.1s Projectile Cooldown"
+metadata/_custom_type_script = "uid://dawowtntn6x5v"
+
+[sub_resource type="Resource" id="Resource_sovce"]
+script = ExtResource("5_8a28o")
+cooldown = 0.2
+description = "-0.2s Projectile Cooldown"
+metadata/_custom_type_script = "uid://dawowtntn6x5v"
+
+[resource]
+script = ExtResource("3_sovce")
+particle_effect = ExtResource("3_k181t")
+damage = 1
+speed = 400
+cooldown = 0.8
+upgrades = Array[ExtResource("4_sovce")]([SubResource("Resource_qf6d8"), SubResource("Resource_k181t"), SubResource("Resource_m1ndj"), SubResource("Resource_vbhly"), SubResource("Resource_sovce")])
+item_needed = ExtResource("1_8a28o")
+evolution = ExtResource("1_qf6d8")
+sound = ExtResource("6_m1ndj")
+title = "Magic Wand"
+texture = ExtResource("1_q41q4")
+metadata/_custom_type_script = "uid://biro2r6vq1t5q"

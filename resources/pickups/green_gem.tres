@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Gem" format=3 uid="uid://d0qxyejt1pfvs"]
+
+[ext_resource type="Texture2D" uid="uid://ct2davwdt5bup" path="res://assets/Pixel Art Gem Pack - Animated/GEM 1/LIGHT GREEN/GEM 1 - LIGHT GREEN - 0000.png" id="1_ulgp5"]
+[ext_resource type="Script" uid="uid://hh568ktd6ka8" path="res://scenes/player/pickups/gem.gd" id="2_mhldx"]
+[ext_resource type="AudioStream" uid="uid://cib3vqfc0ym3v" path="res://assets/sounds/jewel-collect-sfx-sound.mp3" id="3_mhldx"]
+
+[resource]
+script = ExtResource("2_mhldx")
+XP = 2.0
+title = "Green Gem"
+icon = ExtResource("1_ulgp5")
+sound = ExtResource("3_mhldx")
+metadata/_custom_type_script = "uid://hh568ktd6ka8"

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="PassiveItem" format=3 uid="uid://cmevisl3pfy6v"]
+
+[ext_resource type="Script" uid="uid://lr3buodh7ysp" path="res://scenes/player/items/passive_item_res.gd" id="1_kt7nh"]
+[ext_resource type="Texture2D" uid="uid://dj1tfur3nhoeh" path="res://assets/weapon sprites/Icon-Pummarola.svg" id="2_l146a"]
+[ext_resource type="Script" uid="uid://qyq7k1xmj35t" path="res://scenes/player/stats/stats_res.gd" id="3_f8n8w"]
+
+[sub_resource type="Resource" id="Resource_n85bb"]
+script = ExtResource("3_f8n8w")
+description = "+0.2 Health/s"
+recovery = 0.2
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[sub_resource type="Resource" id="Resource_6pb6j"]
+script = ExtResource("3_f8n8w")
+description = "+0.4 Health/s"
+recovery = 0.4
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[sub_resource type="Resource" id="Resource_b5sbj"]
+script = ExtResource("3_f8n8w")
+description = "+0.6 Health/s"
+recovery = 0.6
+metadata/_custom_type_script = "uid://qyq7k1xmj35t"
+
+[resource]
+script = ExtResource("1_kt7nh")
+upgrades = Array[ExtResource("3_f8n8w")]([SubResource("Resource_n85bb"), SubResource("Resource_6pb6j"), SubResource("Resource_b5sbj")])
+texture = ExtResource("2_l146a")
+metadata/_custom_type_script = "uid://lr3buodh7ysp"
