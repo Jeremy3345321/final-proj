@@ -44,7 +44,6 @@ var second: int:
 			print("[spawner] Spawn surge at 2:30")
 
 func _ready() -> void:
-	spawn_boss.call_deferred()
 	GameStateObserver.boss_defeated.connect(_on_boss_defeated)
 
 func _physics_process(_delta: float) -> void:

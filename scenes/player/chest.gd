@@ -9,8 +9,8 @@ extends NinePatchRect
 @export var available_weapons: Array[Weapon]
 @export var available_passives: Array[PassiveItem]
 
-const NEW_ITEM_CHANCE: float = 0.10
-const PITY_THRESHOLD: int = 5
+const NEW_ITEM_CHANCE: float = 0.18
+const PITY_THRESHOLD: int = 4
 var no_new_item_streak: int = 0
 var evolved_base_weapons: Array[Weapon] = []
 

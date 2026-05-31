@@ -17,5 +17,4 @@ script = ExtResource("7_dq4w8")
 enemy_pool = Array[ExtResource("1_oxpis")]([ExtResource("2_umxep"), ExtResource("3_uimkm"), ExtResource("4_0uoml"), ExtResource("5_y8yfh"), ExtResource("6_fxwcm")])
 unlocked_weapons = Array[ExtResource("10_0oain")]([ExtResource("11_i1ynp")])
 unlocked_passives = Array[ExtResource("8_isvip")]([ExtResource("9_hrxwl")])
-survival_seconds = 30
 metadata/_custom_type_script = "uid://mbyvch1sio4y"

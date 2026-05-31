@@ -149,15 +149,15 @@ border_color = Color(0.64864516, 0.6487358, 0.108808435, 1)
 ProgressBar/styles/background = SubResource("StyleBoxFlat_gmlin")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_lvxji")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lvxji"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8afob"]
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fm80t"]
 bg_color = Color(0.90588236, 0, 0.16862746, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gx1jg"]
 bg_color = Color(0, 0.5764706, 0.14901961, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lvxji"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8afob"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gmlin"]
 radius = 50.0
@@ -816,6 +816,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
+[node name="Health" type="ProgressBar" parent="." unique_id=894119687]
+unique_name_in_owner = true
+z_index = 1
+offset_left = -12.0
+offset_top = 15.0
+offset_right = 12.0
+offset_bottom = 17.0
+theme_override_styles/background = SubResource("StyleBoxFlat_fm80t")
+theme_override_styles/fill = SubResource("StyleBoxFlat_gx1jg")
+value = 100.0
+show_percentage = false
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1799309376]
 shape = SubResource("RectangleShape2D_lvxji")
 
@@ -826,17 +838,6 @@ collision_mask = 2
 [node name="Collision" type="CollisionShape2D" parent="SelfDamage" unique_id=22815359]
 unique_name_in_owner = true
 shape = SubResource("RectangleShape2D_8afob")
-
-[node name="Health" type="ProgressBar" parent="." unique_id=894119687]
-unique_name_in_owner = true
-offset_left = -12.0
-offset_top = 15.0
-offset_right = 12.0
-offset_bottom = 17.0
-theme_override_styles/background = SubResource("StyleBoxFlat_fm80t")
-theme_override_styles/fill = SubResource("StyleBoxFlat_gx1jg")
-value = 100.0
-show_percentage = false
 
 [node name="Magnet" type="Area2D" parent="." unique_id=1571231561]
 collision_layer = 0
