@@ -27,6 +27,11 @@ func _show_panel(defeated_stage: int) -> void:
 
 	var next_stage = defeated_stage + 1
 	var is_final   = next_stage > 3
+	
+	if is_final:
+		get_tree().paused = true
+		GameStateObserver.emit_game_won()
+		return  # ← don't show boss panel at all
 	title_label.text = "Stage %d Complete!" % defeated_stage
 
 	# Auto-find spawner — no Inspector assignment needed

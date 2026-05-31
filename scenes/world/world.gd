@@ -15,7 +15,6 @@ var current_stage_index: int = 0
 
 func _ready() -> void:
 	GameStateObserver.stage_transition_requested.connect(_on_stage_transition_requested)
-	GameStateObserver.player_defeated.connect(_on_player_defeated)
 
 	# CRITICAL: ignore mouse so FadeRect never blocks UI clicks underneath
 	fade_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE

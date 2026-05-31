@@ -11,10 +11,15 @@ extends CharacterBody2D
 @export var starting_passive: PassiveItem  # optional; set if player starts with a passive too
 
 var movement_speed: float = 150
+var _is_defeated: bool = false
+
 var health: float = 100:
 	set(value):
 		health = max(value, 0)
 		%Health.value = value
+		if health <= 0 and not _is_defeated:
+			_is_defeated = true
+			GameStateObserver.emit_player_defeated(0)
 var max_health: float = 100:
 	set(value):
 		max_health = value
@@ -130,6 +135,8 @@ func open_chest() -> void:
 ## Called by the World node after the fade-out completes.
 ## Resets all stats and items, then restores the starting item.
 func reset_for_stage() -> void:
+	_is_defeated = false
+	
 	# Reset base stats
 	movement_speed = 150
 	max_health = 100
