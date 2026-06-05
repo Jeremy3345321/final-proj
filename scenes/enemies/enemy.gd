@@ -84,6 +84,9 @@ func take_damage(amount) -> void:
 	health -= amount
 
 func drop_item() -> void:
+	if is_boss and health != 0:
+		health = 0
+	
 	if type.drops.size() == 0:
 		queue_free()
 		return
